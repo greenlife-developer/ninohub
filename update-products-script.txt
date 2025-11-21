@@ -1,0 +1,7 @@
+This file contains instructions for updating the products:
+
+1. Add `customizable: true` or `customizable: false` to each product
+2. Products with IDs 1-20 should have customizable: true
+3. All other products should have customizable: false
+4. Add 6 new custom featured products using custom-01.jpg through custom-06.jpg
+5. These custom products should be in a "Custom" category

@@ -1,0 +1,130 @@
+.customization-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.customization-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.showcase-card {
+    border: 2px solid rgba(252, 187, 24, 0.3);
+}
+
+.showcase-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #FCBB18;
+    color: #6A4F0A;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.customization-image {
+    width: 100%;
+    aspect-ratio: 1.5;
+    background: linear-gradient(135deg, #6A4F0A 0%, #FCBB18 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.customization-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customization-content {
+    padding: 20px;
+}
+
+.customization-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.customization-date {
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.customization-details {
+    margin-bottom: 20px;
+}
+
+.detail-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item strong {
+    color: #FCBB18;
+    margin-right: 8px;
+}
+
+.customization-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.customization-actions button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.showcase-card .customization-actions button {
+    flex: auto;
+}
+
+.showcase-card .btn-add-cart {
+    flex: 1;
+}
+
+.btn-add-cart {
+    background-color: #FCBB18;
+    color: #6A4F0A;
+}
+
+.btn-add-cart:hover {
+    background-color: #6A4F0A;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #f0f0f0;
+    color: #ff4444;
+}
+
+.btn-delete:hover {
+    background-color: #ff4444;
+    color: white;
+}

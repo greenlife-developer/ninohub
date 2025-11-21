@@ -1,0 +1,256 @@
+.checkout-page {
+    min-height: 100vh;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.checkout-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.checkout-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+
+.progress-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+}
+
+.progress-item.active {
+    color: #FCBB18;
+}
+
+.progress-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.progress-item.active .progress-circle {
+    background-color: #FCBB18;
+    color: #6A4F0A;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+}
+
+.checkout-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-grid input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-grid input.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-grid input:focus {
+    outline: none;
+    border-color: #FCBB18;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.form-actions button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-back {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.btn-back:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-next,
+.btn-place-order {
+    background-color: #FCBB18;
+    color: #6A4F0A;
+    margin-left: auto;
+}
+
+.btn-next:hover,
+.btn-place-order:hover {
+    background-color: #6A4F0A;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.review-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review-group {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.review-group h3 {
+    margin-bottom: 15px;
+    color: #FCBB18;
+}
+
+.review-group p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.order-summary {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.order-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.summary-items {
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-totals {
+    margin-top: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.summary-row.total {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 10px;
+}
+
+.summary-divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+
+@media (max-width: 1024px) {
+    .checkout-content {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-page h1 {
+        font-size: 2rem;
+    }
+
+    .checkout-progress {
+        gap: 20px;
+    }
+
+    .progress-circle {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .progress-item span {
+        font-size: 0.9rem;
+    }
+
+    .checkout-form {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid input.full-width {
+        grid-column: 1;
+    }
+}

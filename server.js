@@ -1,0 +1,71 @@
+const dotenv = require("dotenv").config();
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const path = require("path");
+const userRoute = require("./routes/userRoutes");
+const errorHandler = require("./middleware/errorMiddleware");
+
+const app = express();
+
+// Middlewares
+app.use(express.json());
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(cors());
+
+// Request logging middleware
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
+  next();
+});
+// app.use(
+//   cors({
+//     origin: ["http://localhost:3000", "https://inventory-software.onrender.com"],
+//     credentials: true,
+//   })
+// );
+
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+// Routes Middleware
+app.use("/api/users", userRoute);
+
+// Routes
+app.get("/api", (req, res) => {
+  res.send("API is running..");
+});
+
+// --------------------------deployment on heroku------------------------------
+
+// Serve static assets in production
+if (
+  process.env.NODE_ENV === "production" ||
+  process.env.NODE_ENV === "staging"
+) {
+  app.use(express.static(path.join(__dirname, "/client/build")));
+
+  // Serve React app for all non-API routes using a catch-all
+  app.use((req, res) => {
+    res.sendFile(path.join(__dirname, "/client/build", "index.html"));
+  });
+}
+
+// --------------------------deployment------------------------------
+
+// Error Middleware
+app.use(errorHandler);
+
+// Connect to DB and start server
+const PORT = process.env.PORT || 5000;
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server Running on port ${PORT}`);
+    });
+  })
+  .catch((err) => console.log(err));

@@ -1,0 +1,112 @@
+.customization-page {
+    min-height: 100vh;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.customization-header {
+    text-align: center;
+    margin: 40px 0 40px;
+}
+
+.customization-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.customization-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.customization-intro {
+    background: linear-gradient(135deg, rgba(0, 0, 10, 0.65) 0%, rgba(0, 0, 24, 0.65) 100%),
+        url('../assets/product-images/custom-02.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    color: white;
+    padding: 60px 40px;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.intro-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-start-customization {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: white;
+    color: #6A4F0A;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-start-customization:hover {
+    transform: translateY(-2px);
+    background-color: #FCBB18;
+}
+
+.previous-customizations h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.gallery-description {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.customizations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.no-customizations {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.no-customizations p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .customization-header h1 {
+        font-size: 2rem;
+    }
+
+    .intro-content h2 {
+        font-size: 2rem;
+    }
+
+    .customizations-grid {
+        grid-template-columns: 1fr;
+    }
+}
