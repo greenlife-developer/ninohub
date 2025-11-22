@@ -2,7 +2,7 @@
     min-height: 100vh;
 }
 
-.hero {
+.home .hero {
     background: linear-gradient(135deg, rgba(106, 79, 10, 0.9) 0%, rgba(252, 187, 24, 0.8) 100%),
         url('../assets/hero-img.jpg') center/cover;
     color: white;
@@ -11,20 +11,20 @@
     position: relative;
 }
 
-.hero-content h1 {
+.home .hero-content h1 {
     font-size: 3rem;
     margin: 0 auto 20px;
     max-width: 700px;
 
 }
 
-.hero-content p {
+.home .hero-content p {
     font-size: 1.3rem;
     margin: 0 auto 30px;
     max-width: 700px;
 }
 
-.hero-buttons {
+.home .hero-buttons {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -32,7 +32,7 @@
     max-width: 700px;
 }
 
-.btn {
+.home .btn {
     padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
@@ -40,24 +40,24 @@
     transition: transform 0.2s;
 }
 
-.btn-primary {
+.home .btn-primary {
     background-color: #FCBB18;
     color: #6A4F0A;
     font-weight: 700;
 }
 
-.btn-secondary {
+.home .btn-secondary {
     background-color: transparent;
     color: white;
     border: 2px solid white;
 }
 
-.btn:hover {
+.home .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.features {
+.home .features {
     padding: 80px 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -66,7 +66,7 @@
     margin: 0 auto;
 }
 
-.feature-card {
+.home .feature-card {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -74,34 +74,34 @@
     background: white;
 }
 
-.feature-card h3 {
+.home .feature-card h3 {
     color: #6A4F0A;
     margin-bottom: 15px;
 }
 
-.feature-card a {
+.home .feature-card a {
     color: #FCBB18;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
 
-.feature-card a:hover {
+.home .feature-card a:hover {
     color: #6A4F0A;
 }
 
-.categories {
+.home .categories {
     padding: 80px 20px;
     background-color: #f8f9fa;
 }
 
-.categories h2 {
+.home .categories h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5rem;
 }
 
-.category-grid {
+.home .category-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
@@ -109,7 +109,7 @@
     margin: 0 auto;
 }
 
-.category-item {
+.home .category-item {
     text-decoration: none;
     color: inherit;
     text-align: center;
@@ -120,12 +120,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.category-item:hover {
+.home .category-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.category-image {
+.home .category-image {
     width: 100%;
     height: 200px;
     margin-bottom: 15px;
@@ -134,28 +134,28 @@
     background: #f5f5f5;
 }
 
-.category-image img {
+.home .category-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
 }
 
-.category-item:hover .category-image img {
+.home .category-item:hover .category-image img {
     transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
-    .hero-content h1 {
+    .home .hero-content h1 {
         font-size: 2rem;
     }
 
-    .hero-buttons {
+    .home .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
 
-    .btn {
+    .home .btn {
         width: 100%;
         max-width: 250px;
     }

@@ -7,7 +7,7 @@
     padding: 20px;
 }
 
-.login-container {
+.login-page .login-container {
     background: white;
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -29,18 +29,18 @@
     }
 }
 
-.login-header {
+.login-page .login-header {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-header h1 {
+.login-page .login-header h1 {
     font-size: 2rem;
     color: #6A4F0A;
     margin-bottom: 10px;
 }
 
-.login-header p {
+.login-page .login-header p {
     color: #666;
     font-size: 1rem;
 }
@@ -165,11 +165,11 @@
 }
 
 @media (max-width: 768px) {
-    .login-container {
+    .login-page .login-container {
         padding: 30px 20px;
     }
 
-    .login-header h1 {
+    .login-page .login-header h1 {
         font-size: 1.75rem;
     }
 }

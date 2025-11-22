@@ -4,7 +4,7 @@
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-.profile-container {
+.profile-page .profile-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -13,7 +13,7 @@
 }
 
 /* Sidebar */
-.profile-sidebar {
+.profile-page .profile-sidebar {
     background: white;
     border-radius: 15px;
     padding: 30px;
@@ -23,14 +23,14 @@
     top: 90px;
 }
 
-.profile-header {
+.profile-page .profile-header {
     text-align: center;
     margin-bottom: 30px;
     padding-bottom: 25px;
     border-bottom: 2px solid #f0f0f0;
 }
 
-.profile-avatar {
+.profile-page .profile-avatar {
     width: 100px;
     height: 100px;
     margin: 0 auto 20px;
@@ -42,36 +42,36 @@
     overflow: hidden;
 }
 
-.profile-avatar img {
+.profile-page .profile-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.profile-avatar svg {
+.profile-page .profile-avatar svg {
     width: 50px;
     height: 50px;
     color: #6A4F0A;
 }
 
-.profile-header h2 {
+.profile-page .profile-header h2 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 5px;
 }
 
-.profile-header p {
+.profile-page .profile-header p {
     color: #666;
     font-size: 0.9rem;
 }
 
-.profile-nav {
+.profile-page .profile-nav {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.nav-item {
+.profile-page .nav-item {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -88,29 +88,29 @@
     text-align: left;
 }
 
-.nav-item svg {
+.profile-page .nav-item svg {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
 }
 
-.nav-item:hover,
-.nav-item.active {
+.profile-page .nav-item:hover,
+.profile-page .nav-item.active {
     background: rgba(252, 187, 24, 0.1);
     color: #6A4F0A;
 }
 
-.nav-item.logout {
+.profile-page .nav-item.logout {
     color: #dc3545;
     margin-top: 20px;
 }
 
-.nav-item.logout:hover {
+.profile-page .nav-item.logout:hover {
     background: rgba(220, 53, 69, 0.1);
 }
 
 /* Content */
-.profile-content {
+.profile-page .profile-content {
     background: white;
     border-radius: 15px;
     padding: 40px;
@@ -118,32 +118,32 @@
     min-height: 500px;
 }
 
-.profile-content h2 {
+.profile-page .profile-content h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 30px;
 }
 
 /* Orders Section */
-.orders-list {
+.profile-page .orders-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.order-card {
+.profile-page .order-card {
     border: 2px solid #f0f0f0;
     border-radius: 12px;
     padding: 25px;
     transition: all 0.3s;
 }
 
-.order-card:hover {
+.profile-page .order-card:hover {
     border-color: #FCBB18;
     box-shadow: 0 3px 15px rgba(252, 187, 24, 0.1);
 }
 
-.order-header {
+.profile-page .order-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -152,74 +152,74 @@
     border-bottom: 1px solid #f0f0f0;
 }
 
-.order-info h3 {
+.profile-page .order-info h3 {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 5px;
 }
 
-.order-date {
+.profile-page .order-date {
     color: #666;
     font-size: 0.9rem;
     margin: 0;
 }
 
-.order-status {
+.profile-page .order-status {
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
 }
 
-.status-in-transit {
+.profile-page .status-in-transit {
     background: rgba(252, 187, 24, 0.2);
     color: #6A4F0A;
 }
 
-.status-delivered {
+.profile-page .status-delivered {
     background: rgba(40, 167, 69, 0.2);
     color: #28a745;
 }
 
-.status-processing {
+.profile-page .status-processing {
     background: rgba(0, 123, 255, 0.2);
     color: #007bff;
 }
 
-.order-items {
+.profile-page .order-items {
     margin-bottom: 20px;
 }
 
-.order-item {
+.profile-page .order-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
 }
 
-.order-item:not(:last-child) {
+.profile-page .order-item:not(:last-child) {
     border-bottom: 1px solid #f8f9fa;
 }
 
-.item-details h4 {
+.profile-page .item-details h4 {
     color: #333;
     font-size: 1rem;
     margin-bottom: 5px;
 }
 
-.item-details p {
+.profile-page .item-details p {
     color: #666;
     font-size: 0.9rem;
     margin: 0;
 }
 
-.item-price {
+.profile-page .item-price {
     color: #6A4F0A;
     font-size: 1.1rem;
     font-weight: 700;
 }
 
-.order-footer {
+.profile-page .order-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,24 +227,24 @@
     border-top: 1px solid #f0f0f0;
 }
 
-.order-total {
+.profile-page .order-total {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.order-total span:first-child {
+.profile-page .order-total span:first-child {
     color: #666;
     font-size: 0.9rem;
 }
 
-.total-amount {
+.profile-page .total-amount {
     color: #6A4F0A;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.btn-track-order {
+.profile-page .btn-track-order {
     padding: 12px 24px;
     background: linear-gradient(135deg, #6A4F0A 0%, #8a6b1a 100%);
     color: white;
@@ -254,36 +254,36 @@
     transition: all 0.3s;
 }
 
-.btn-track-order:hover {
+.profile-page .btn-track-order:hover {
     background: linear-gradient(135deg, #8a6b1a 0%, #6A4F0A 100%);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(106, 79, 10, 0.3);
 }
 
-.empty-orders {
+.profile-page .empty-orders {
     text-align: center;
     padding: 60px 20px;
 }
 
-.empty-orders svg {
+.profile-page .empty-orders svg {
     width: 80px;
     height: 80px;
     color: #ddd;
     margin-bottom: 20px;
 }
 
-.empty-orders h3 {
+.profile-page .empty-orders h3 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-.empty-orders p {
+.profile-page .empty-orders p {
     color: #666;
     margin-bottom: 25px;
 }
 
-.btn-shop-now {
+.profile-page .btn-shop-now {
     display: inline-block;
     padding: 14px 30px;
     background: linear-gradient(135deg, #FCBB18 0%, #ffd666 100%);
@@ -294,21 +294,21 @@
     transition: all 0.3s;
 }
 
-.btn-shop-now:hover {
+.profile-page .btn-shop-now:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(252, 187, 24, 0.3);
 }
 
 /* Settings Section */
-.settings-form {
+.profile-page .settings-form {
     max-width: 600px;
 }
 
-.form-group {
+.profile-page .form-group {
     margin-bottom: 25px;
 }
 
-.form-group label {
+.profile-page .form-group label {
     display: block;
     color: #333;
     font-weight: 600;
@@ -316,8 +316,8 @@
     font-size: 0.95rem;
 }
 
-.form-group input,
-.form-group textarea {
+.profile-page .form-group input,
+.profile-page .form-group textarea {
     width: 100%;
     padding: 14px 16px;
     border: 2px solid #e0e0e0;
@@ -325,26 +325,28 @@
     font-size: 1rem;
     font-family: inherit;
     transition: all 0.3s;
+    background: white;
+    box-sizing: border-box;
 }
 
-.form-group input:disabled {
+.profile-page .form-group input:disabled {
     background: #f8f9fa;
     cursor: not-allowed;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.profile-page .form-group input:focus,
+.profile-page .form-group textarea:focus {
     outline: none;
     border-color: #FCBB18;
     box-shadow: 0 0 0 3px rgba(252, 187, 24, 0.1);
 }
 
-.form-group textarea {
+.profile-page .form-group textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-.btn-save {
+.profile-page .btn-save {
     padding: 14px 30px;
     background: linear-gradient(135deg, #6A4F0A 0%, #8a6b1a 100%);
     color: white;
@@ -356,7 +358,7 @@
     transition: all 0.3s;
 }
 
-.btn-save:hover {
+.profile-page .btn-save:hover {
     background: linear-gradient(135deg, #8a6b1a 0%, #6A4F0A 100%);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(106, 79, 10, 0.3);
@@ -364,16 +366,16 @@
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
-    .profile-container {
+    .profile-page .profile-container {
         grid-template-columns: 250px 1fr;
         gap: 20px;
     }
 
-    .profile-sidebar {
+    .profile-page .profile-sidebar {
         padding: 25px 20px;
     }
 
-    .profile-content {
+    .profile-page .profile-content {
         padding: 30px 25px;
     }
 }
@@ -383,69 +385,69 @@
         padding: 20px 15px;
     }
 
-    .profile-container {
+    .profile-page .profile-container {
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
-    .profile-sidebar {
+    .profile-page .profile-sidebar {
         position: static;
     }
 
-    .profile-content {
+    .profile-page .profile-content {
         padding: 25px 20px;
     }
 
-    .profile-content h2 {
+    .profile-page .profile-content h2 {
         font-size: 1.6rem;
     }
 
-    .order-header {
+    .profile-page .order-header {
         flex-direction: column;
         gap: 15px;
     }
 
-    .order-footer {
+    .profile-page .order-footer {
         flex-direction: column;
         align-items: stretch;
         gap: 15px;
     }
 
-    .btn-track-order {
+    .profile-page .btn-track-order {
         text-align: center;
     }
 
-    .order-item {
+    .profile-page .order-item {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
 
-    .item-price {
+    .profile-page .item-price {
         align-self: flex-end;
     }
 }
 
 @media (max-width: 480px) {
-    .profile-avatar {
+    .profile-page .profile-avatar {
         width: 80px;
         height: 80px;
     }
 
-    .profile-avatar svg {
+    .profile-page .profile-avatar svg {
         width: 40px;
         height: 40px;
     }
 
-    .profile-header h2 {
+    .profile-page .profile-header h2 {
         font-size: 1.3rem;
     }
 
-    .order-card {
+    .profile-page .order-card {
         padding: 20px 15px;
     }
 
-    .order-info h3 {
+    .profile-page .order-info h3 {
         font-size: 1rem;
     }
 }

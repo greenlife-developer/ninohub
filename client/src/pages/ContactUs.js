@@ -73,8 +73,8 @@ const ContactUs = () => {
               </svg>
             </div>
             <h3>Visit Us</h3>
-            <p>123 Jewelry Plaza</p>
-            <p>Victoria Island, Lagos</p>
+            <p>Lafe Junction Bus shelter</p>
+            <p>Akure, Ondo</p>
             <p>Nigeria</p>
           </div>
 
@@ -91,12 +91,12 @@ const ContactUs = () => {
             </div>
             <h3>Call Us</h3>
             <p>
-              <a href="tel:+2348012345678">+234 801 234 5678</a>
+              <a href="tel:+2348012345678">+234 915 576 6040</a>
             </p>
             <p>
-              <a href="tel:+2349087654321">+234 908 765 4321</a>
+              <a href="tel:+2349087654321">+234 915 576 6040</a>
             </p>
-            <p className="info-hours">Mon - Sat: 9AM - 6PM</p>
+            <p className="info-hours">Mon - Sat: 8:30AM - 5:30PM</p>
           </div>
 
           <div className="info-card">
@@ -113,14 +113,14 @@ const ContactUs = () => {
             </div>
             <h3>Email Us</h3>
             <p>
-              <a href="mailto:info@shopwithnino.com">info@shopwithnino.com</a>
+              <a href="mailto:info@ninohub.com">info@ninohub.com</a>
             </p>
             <p>
-              <a href="mailto:support@shopwithnino.com">
-                support@shopwithnino.com
+              <a href="mailto:support@ninohub.com">
+                support@ninohub.com
               </a>
             </p>
-            <p className="info-hours">24/7 Support</p>
+            <p className="info-hours">Mon - Sat: 8:30AM - 5:30PM </p>
           </div>
 
           <div className="info-card">
@@ -280,7 +280,7 @@ const ContactUs = () => {
             <h3>What are your shipping options?</h3>
             <p>
               We offer standard and express shipping across Nigeria. Delivery
-              typically takes 3-7 business days depending on your location.
+              typically takes 1-2 business days depending on your location.
             </p>
           </div>
           <div className="faq-item">
@@ -293,14 +293,14 @@ const ContactUs = () => {
           <div className="faq-item">
             <h3>What is your return policy?</h3>
             <p>
-              We accept returns within 14 days of delivery. Items must be unworn
+              We accept returns within 1 day of delivery. Items must be unworn
               and in original packaging.
             </p>
           </div>
           <div className="faq-item">
             <h3>Do you offer warranty on jewelry?</h3>
             <p>
-              Yes, all our jewelry comes with a 1-year warranty against
+              Yes, all our jewelry comes with a 3-months warranty against
               manufacturing defects.
             </p>
           </div>
