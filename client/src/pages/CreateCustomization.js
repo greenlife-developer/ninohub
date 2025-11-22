@@ -66,7 +66,7 @@ const CreateCustomization = () => {
     if (currentCustomization.step < 4) {
       dispatch(setCustomizationStep(currentCustomization.step + 1));
     }
-  }; 
+  };
 
   const handleBack = () => {
     if (currentCustomization.step > 1) {
@@ -182,8 +182,8 @@ const CreateCustomization = () => {
                     >
                       <div className="product-image-placeholder">
                         {product.image ? (
-                          <img 
-                            src={require(`../assets/product-images/${product.image}`)} 
+                          <img
+                            src={require(`../assets/product-images/${product.image}`)}
                             alt={product.name}
                           />
                         ) : (
@@ -376,8 +376,8 @@ const CreateCustomization = () => {
               <div className="review-item">
                 <h4>Selected Item:</h4>
                 <p>
-                  {currentCustomization.product?.name} - $
-                  {currentCustomization.product?.price}
+                  {currentCustomization.product?.name} - ₦
+                  {currentCustomization.product?.price.toLocaleString()}
                 </p>
               </div>
 

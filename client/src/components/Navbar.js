@@ -16,6 +16,18 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
+  // Prevent body scroll when mobile menu is open
+  React.useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -45,7 +57,15 @@ const Navbar = () => {
             </Link>
           </li>
           {isAuthenticated ? (
-            <li className="user-info">{currentUser?.name || "User"}</li>
+            <li>
+              <Link
+                to="/profile"
+                onClick={closeMobileMenu}
+                className="user-info-link"
+              >
+                {currentUser?.name || "User"}
+              </Link>
+            </li>
           ) : (
             <li>
               <Link to="/login" onClick={closeMobileMenu}>
@@ -83,7 +103,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="mobile-menu-overlay" onClick={closeMobileMenu}></div>
       )}
-    </nav> 
+    </nav>
   );
 };
 

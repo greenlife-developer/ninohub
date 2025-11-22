@@ -97,10 +97,20 @@
     font-weight: 700;
 }
 
-.user-info {
+.user-info-link {
     color: white;
     font-weight: 600;
     font-size: 0.9rem;
+    text-decoration: none;
+    padding: 8px 16px;
+    background: rgba(252, 187, 24, 0.2);
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.user-info-link:hover {
+    background: rgba(252, 187, 24, 0.3);
+    color: #FCBB18;
 }
 
 .hamburger {
@@ -173,11 +183,13 @@
         overflow-y: auto;
         overflow-x: hidden;
         pointer-events: none;
+        visibility: hidden;
     }
 
     .navbar-menu.active {
         right: 0;
         pointer-events: auto;
+        visibility: visible;
     }
 
     .navbar-menu li {
@@ -187,8 +199,7 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .navbar-menu li a,
-    .navbar-menu li.user-info {
+    .navbar-menu li a {
         display: block;
         padding: 18px 30px;
         color: white;
@@ -196,6 +207,13 @@
         transition: all 0.3s;
         position: relative;
         overflow: hidden;
+    }
+
+    .navbar-menu li .user-info-link {
+        background-color: rgba(252, 187, 24, 0.2);
+        border-left: 4px solid #FCBB18;
+        font-weight: 700;
+        border-radius: 0;
     }
 
     .navbar-menu li a::before {
@@ -219,12 +237,6 @@
     .navbar-menu li a:active {
         background-color: rgba(252, 187, 24, 0.15);
         padding-left: 40px;
-    }
-
-    .navbar-menu li.user-info {
-        background-color: rgba(252, 187, 24, 0.2);
-        border-left: 4px solid #FCBB18;
-        font-weight: 700;
     }
 
     .mobile-menu-overlay {

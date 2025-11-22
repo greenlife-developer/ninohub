@@ -44,6 +44,9 @@ const Footer = () => {
               <Link to="/customization">Customize</Link>
             </li>
             <li>
+              <Link to="/track-order">Track Order</Link>
+            </li>
+            <li>
               <Link to="/cart">Cart</Link>
             </li>
           </ul>
@@ -53,20 +56,16 @@ const Footer = () => {
           <h4>Customer Service</h4>
           <ul>
             <li>
-              <a href="#contact">
-                <img
-                  src={require("../assets/sms-icon.svg").default}
-                  alt=""
-                  className="footer-icon"
-                />
-                Contact Us
-              </a>
+              <Link to="/contact">Contact Us</Link>
             </li>
             <li>
               <a href="#shipping">Shipping Info</a>
             </li>
             <li>
               <a href="#returns">Returns</a>
+            </li>
+            <li>
+              <a href="#faq">FAQ</a>
             </li>
           </ul>
         </div>

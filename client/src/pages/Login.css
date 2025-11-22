@@ -45,13 +45,13 @@
     font-size: 1rem;
 }
 
-.login-form {
+.login-page .login-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
 }
 
-.form-group {
+.login-page .form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -70,68 +70,75 @@
     }
 }
 
-.form-group label {
+.login-page .form-group label {
     font-weight: 600;
     color: #333;
     font-size: 0.95rem;
 }
 
-.form-group input {
+.login-page .form-group input {
     padding: 12px 16px;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 1rem;
     transition: all 0.3s;
     outline: none;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.form-group input:focus {
+.login-page .form-group input:focus {
     border-color: #FCBB18;
     box-shadow: 0 0 0 3px rgba(252, 187, 24, 0.1);
 }
 
-.form-group input::placeholder {
+.login-page .form-group input::placeholder {
     color: #999;
 }
 
-.btn-submit {
+.login-page .login-form .btn-submit {
     padding: 14px;
     background-color: #FCBB18;
-    color: #6A4F0A;
+    color: #fff;
     border: none;
     border-radius: 8px;
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s;
-    margin-top: 10px;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.btn-submit:hover:not(:disabled) {
+.login-page .login-form .btn-submit:hover:not(:disabled) {
     background-color: #6A4F0A;
-    color: white;
+    color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(106, 79, 10, 0.3);
 }
 
-.btn-submit:disabled {
+.login-page .login-form .btn-submit:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
-.login-toggle {
+.login-page .login-toggle {
     text-align: center;
     margin-top: 25px;
     padding-top: 25px;
     border-top: 1px solid #e0e0e0;
 }
 
-.login-toggle p {
+.login-page .login-toggle p {
     color: #666;
     font-size: 0.95rem;
+    display: inline;
+    margin: 0;
 }
 
-.toggle-btn {
+.login-page .login-toggle .toggle-btn {
     background: none;
     border: none;
     color: #FCBB18;
@@ -140,10 +147,21 @@
     text-decoration: underline;
     font-size: 0.95rem;
     transition: color 0.3s;
+    padding: 0;
+    margin: 0;
+    margin-left: 4px;
+    outline: none;
+    display: inline;
+    vertical-align: baseline;
 }
 
-.toggle-btn:hover {
+.login-page .login-toggle .toggle-btn:hover {
     color: #6A4F0A;
+}
+
+.login-page .login-toggle .toggle-btn:focus {
+    outline: none;
+    border: none;
 }
 
 @media (max-width: 768px) {

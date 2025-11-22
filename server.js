@@ -69,3 +69,6 @@ mongoose
     });
   })
   .catch((err) => console.log(err));
+
+
+  // I want you to track add the order tracking page as well as the contact us page, please do it for with the brand identity and asthetics ofo the UI of the app, also make it mobile responsive

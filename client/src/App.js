@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setProducts } from "./redux/slices/productsSlice";
 import Navbar from "./components/Navbar";
@@ -13,7 +18,21 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import TrackOrder from "./pages/TrackOrder";
+import ContactUs from "./pages/ContactUs";
+import Profile from "./pages/Profile";
 import "./App.css";
+
+// Scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 // Product data with real images
 const sampleProducts = [
@@ -1636,6 +1655,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <main className="main-content">
@@ -1649,6 +1669,9 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/track-order" element={<TrackOrder />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

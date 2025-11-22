@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.92f9ca34.css",
-    "main.js": "/static/js/main.471efd8e.js",
+    "main.css": "/static/css/main.fd553523.css",
+    "main.js": "/static/js/main.68ea951c.js",
     "static/js/453.d456ce70.chunk.js": "/static/js/453.d456ce70.chunk.js",
     "static/media/necklaces-17.jpg": "/static/media/necklaces-17.eba7ce113180f103bcdc.jpg",
     "static/media/other-03.jpg": "/static/media/other-03.e507c5a6c78c51163aab.jpg",
@@ -238,15 +238,14 @@
     "static/media/cart-icon.svg": "/static/media/cart-icon.2e71b36b4e50296d98a7a18dbb86ee4a.svg",
     "static/media/instagram-icon.svg": "/static/media/instagram-icon.1a5175d08d43ae2a7483303773c24a91.svg",
     "static/media/tiktok-icon.svg": "/static/media/tiktok-icon.ddfe6c03cfa04a4416c716517123f94e.svg",
-    "static/media/sms-icon.svg": "/static/media/sms-icon.0c67f9ec593a341bd4114b4f4dbb32dd.svg",
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.89fde62f458562dcfdcdae21d1a07c18.svg",
     "index.html": "/index.html",
-    "main.92f9ca34.css.map": "/static/css/main.92f9ca34.css.map",
-    "main.471efd8e.js.map": "/static/js/main.471efd8e.js.map",
+    "main.fd553523.css.map": "/static/css/main.fd553523.css.map",
+    "main.68ea951c.js.map": "/static/js/main.68ea951c.js.map",
     "453.d456ce70.chunk.js.map": "/static/js/453.d456ce70.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92f9ca34.css",
-    "static/js/main.471efd8e.js"
+    "static/css/main.fd553523.css",
+    "static/js/main.68ea951c.js"
   ]
 }

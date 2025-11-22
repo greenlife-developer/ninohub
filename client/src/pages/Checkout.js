@@ -247,7 +247,7 @@ const Checkout = () => {
                     <span>
                       {item.name} × {item.quantity}
                     </span>
-                    <span>${item.totalPrice.toFixed(2)}</span>
+                    <span>₦{item.totalPrice.toLocaleString()}</span>
                   </div>
                 ))}
               </div>
@@ -281,7 +281,7 @@ const Checkout = () => {
                 <span>
                   {item.name} × {item.quantity}
                 </span>
-                <span>${item.totalPrice.toFixed(2)}</span>
+                <span>₦{item.totalPrice.toLocaleString()}</span>
               </div>
             ))}
           </div>
@@ -289,20 +289,20 @@ const Checkout = () => {
           <div className="summary-totals">
             <div className="summary-row">
               <span>Subtotal</span>
-              <span>${totalAmount.toFixed(2)}</span>
+              <span>₦{totalAmount.toLocaleString()}</span>
             </div>
             <div className="summary-row">
               <span>Shipping</span>
-              <span>${shipping.toFixed(2)}</span>
+              <span>₦{shipping.toLocaleString()}</span>
             </div>
             <div className="summary-row">
               <span>Tax (8%)</span>
-              <span>${tax.toFixed(2)}</span>
+              <span>₦{tax.toLocaleString()}</span>
             </div>
             <div className="summary-divider"></div>
             <div className="summary-row total">
               <span>Total</span>
-              <span>${finalTotal.toFixed(2)}</span>
+              <span>₦{finalTotal.toLocaleString()}</span>
             </div>
           </div>
         </div>
