@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
-      <Toaster position="top-right" richColors />
+      <Toaster position="bottom-center" richColors />
     </Provider>
   </React.StrictMode>
 );
